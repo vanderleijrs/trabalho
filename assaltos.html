@@ -42,7 +42,14 @@
 					
 					<div class ="formulario">
 					
+						
+						
 						 <form name="assalto" method="post" action="conecta1.php">
+							 
+							<h1>Veja como estão os assaltos na sua rua</h1>
+							<input type="text" id="procura_a" name="procuraA" placeholder="Informe o nome da rua que deseja procurar"><br> 
+							<input name="procura_a" value="Procurar" type="submit"><br><br>
+							 
 							<label for="rua">Rua</label>
 							<input type="text" id="rua" name="rua" placeholder="Digite o nome da rua onde ocorreu o assalto"><br><br>
 							
@@ -50,14 +57,11 @@
 							<input type="text" id="bairro" name="bairro" placeholder="Digite o nome do bairro onde ocorreu o assalto"><br><br>
 
 							<label for="data">Data e hora do assalto</label>
-						    <input type="date" id="data" placeholder="dd/mm/aaaa" required="required" maxlength="10" name="date" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2018-08-01" max="2054-01-01" /> 
-                            <input type="time" id="time" name="time"><br><br>
+						        <input type="date" id="data" placeholder="dd/mm/aaaa" required="required" maxlength="10" name="date" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2018-08-01" max="2054-01-01" /> 
+                                                        <input type="time" id="time" name="time"><br><br>
 							<input name="Submit" value="Enviar" type="submit"><br><br><br><br>
 							
 							
-							<h1>Veja como estão os assaltos na sua rua</h1>
-							<input type="text" id="procura_a" name="procuraA" placeholder="Informe o nome da rua que deseja procurar"><br> 
-							<input name="procura_a" value="Procurar" type="submit"><br><br>
 						</form>
 					</div>														
 			</section>
