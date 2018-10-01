@@ -1,9 +1,8 @@
-<!DOCTYPE HTML>
-
 <html>
 	<head>
-		<title>Ruas</title>
-				<meta charset="utf-8" />
+	
+		<title>Página Inicial</title>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="css.css" />
@@ -11,56 +10,79 @@
 		  <script src="js/js2.js"></script>
 	</head>
 	<body>
-
-		<!-- Header -->
+	  <!-- Header -->
 			<header id="header">
-				
-				<a href="index.html" class="logo">Projeto Saber</a>
-				
-			</header>
-
+      			<a href="index.html" class="logo">Projeto Saber</a>
+			</header><br>
 		<!-- Menu -->
-		<nav class = "navbar navbar_default">	
-		  <div class="container-fluid">
-			<ul class="nav navbar-nav">
-			  <li><a href="index.html">Página Inicial</a></li>
+		<nav class="navbar navbar-inverse" style="background-color:#f0f5f5">
+            <div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				  </button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav">
+					<li><a href="index.html">Página Inicial</a></li>
 					<li><a href="ruas.html">Ruas</a></li>
 					<li><a href="assaltos.html">Assaltos</a></li>
 					<li><a href="sobre.html">Sobre</a></li>
-			</ul>
-		  </div>
-		</nav>
+				  </ul>
+				</div>
+			  </div>
+        </nav>
+  
 
-		<!-- Main -->
-			<section id="main" class="wrapper">
-				
-			        <div class ="formulario">
+		<!-- Banner -->
+			<section id="banner">
+				<div class="content">
+					<h1>Saiba por onde andar</h1>
+					<p>Quer saber qual a melhor rua, com menos buracos, onde há menos assaltos<br/>ou relatar seu assalto ou buraco na via este é o lugar</p>
 					
-						 <form name="rua" method="post" action="conecta1.php">
-							 
-							 <h1>Procure a sua rua</h1>
-							<label for="procura">Veja como esta a sua rua</label>
-							<input type="text" id="procura" name="procura" placeholder="Informe o nome da rua que deseja procurar"><br> 
-							<input name="Procurar" value="Procurar" type="submit"><br><br><br><br>
-							<h1>Informe o problema da sua rua</h1><br> 
-							<label for="rua">Rua</label>
-							<input type="text" id="rua" name="rua" placeholder="Digite o nome da rua"><br><br>
-							
-							<label for="bairro">Bairro</label>
-							<input type="text" id="bairro" name="bairro" placeholder="Digite o nome do bairro"><br><br>
-
-							<label for="prob">Tipo de problema</label>
-							<input type="text" id="prob" name="prob" placeholder="Informe o tipo de problema na sua rua"> <br><br>
-							<input name="Submit" value="Enviar" type="submit"><br><br><br><br>
-							
-							
-						</form>
-					</div>
-					
+				</div>
 			</section>
-			<div align="center">
-			<img src="images/google-maps.jpg"/>		
-			</div><br><<br>
+        <!-- seção -->
+			<section id="one" class="wrapper">
+				<div class="inner flex flex-3">
+					<div class="flex-item left">
+						<div>
+							<h3>Visite lugares mais seguros</h3>
+							<p>Veja os lugares onde ocorrem assaltos</p>
+						</div>
+						<div>
+							<h3>Ande por ruas melhores</h3>
+							<p>Saiba quais estão em melhores condições<br />Evite ruas esburacadas</p>
+						</div>
+					</div>
+					<div class="flex-item image fit round">
+						<img src="images/Porto_Alegre.PNG" alt="" />
+					</div>
+					<div class="flex-item right">
+						<div>
+							<h3>Registre os problemas das ruas da cidade</h3>
+							<p>Informe os problemas nas vias que você conhece<br /></p>
+						</div>
+						<div>
+							<h3>Informe onde foi assaltado</h3>
+							<p>Relate e compartilhe o local do assalto para que outros saibam onde é mais seguro<br /></p>
+						</div>
+					</div>
+				</div>
+			</section>
+        <!--icones-->
+			<div class="inner">
+				
+				<ul class="icon">
+					<a href="https://pt-br.facebook.com/"><img border="0" src="images/face.png" /></a>
+					<a href="https://twitter.com"><img border="0" src="images/twitter.png" /></a>
+					<a href="https://www.instagram.com/"><img border="0" src="images/insta.png" /></a>
+											
+			    </ul>
+			</div>							
+
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -72,16 +94,9 @@
 					</ul>
 				</div>
 				<div class="copyright">
-					&copy; VANDERLEI RODRIGUES
+					&copy;VANDERLEI RODRIGUES
 				</div>
 			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
